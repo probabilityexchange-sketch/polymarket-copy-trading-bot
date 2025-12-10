@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "installCommand": "cd web && npm ci",
+  "buildCommand": "cd web && npm run build",
+  "builds": [
+    {
+      "src": "web/next.config.ts",
+      "use": "@vercel/next",
+      "config": {
+        "rootDir": "web"
+      }
+    }
+  ]
+}
